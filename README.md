@@ -32,7 +32,18 @@ $ oc apply -k https://github.com/dmarcus-wire/serverless-operator/blob/main/inst
 
 ![image](docs/knative-eventing.png)
 
+### Install Knative Kafka for Serverless
+An extension to Knative Eventing, merging HTTP accessibility with Apache Kafka's proven efficiency and reliability
 
+```
+# if cloned
+oc apply -k instance/knative-eventing/overlays/knative-kafka/
+
+# not cloned
+oc apply -k https://github.com/dmarcus-wire/serverless-operator/blob/main/instance/knative-eventing/overlays/knative-kafka/
+```
+
+![image](docs/knative-kafka.png)
 
 ### Install Knative Serving for Serverless
 A platform for streamlined application deployment, traffic-based auto-scaling from zero to N, and traffic-split rollouts
@@ -46,9 +57,5 @@ $ oc apply -k https://github.com/dmarcus-wire/serverless-operator/blob/main/inst
 ```
 
 ![image](docs/knative-serving.png)
-
-### Install Knative Kafka for Serverless
-An extension to Knative Eventing, merging HTTP accessibility with Apache Kafka's proven efficiency and reliability
-
 
 
